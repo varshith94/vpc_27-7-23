@@ -52,7 +52,7 @@ resource "aws_security_group" "qa-sg" {
 }
 
 resource "aws_instance" "qa-server" {
-    count = 2
+    count = 3
     ami = "ami-0f9ce67dcf718d332"
     instance_type = "t2.micro"
     key_name = "krishika"
