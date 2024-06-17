@@ -9,7 +9,7 @@ resource "aws_vpc" "qa" {
 resource "aws_internet_gateway" "igw" {
     vpc_id = aws_vpc.qa.id
     tags = {
-        "Name" = "${var.vpc_name}-igws"
+        "Name" = "${var.vpc_name}-igw"
     }
   
 }
